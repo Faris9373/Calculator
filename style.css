@@ -1,0 +1,72 @@
+body {
+    padding-top: 6rem;
+    background: black;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    background-color: #333;
+    border-radius: 50%;
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    aspect-ratio: 1/1;
+    border: none;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.calculator {
+    padding: 20px;
+    width: 320px;
+    margin: auto;
+    background-color: black;
+}
+
+#display {
+    width: 96%;
+    background-color: black;
+    color: white;
+    text-align: right;
+    border: none;
+    font-size: 4rem;
+    padding: 20px 10px;
+    margin-bottom: -10px;
+    outline: none;
+}
+
+button[data-type = "operator"] {
+    background-color: rgb(246, 160, 0);
+}
+
+button[data-type = "clear"] {
+    background-color: #333;
+    size: large;
+}
+button[data-type = "delete"] {
+    background-color: rgb(97, 97, 97);
+}
+
+button[data-type = "percent"] {
+    background-color: rgb(97, 97, 97);
+}
+
+button[data-type = "plusMinus"] {
+    background-color: rgb(97, 97, 97);
+    size: 100px;
+}
+
+button[data-type = "dot"] {
+    background-color: rgb(246, 160, 0);
+}
+
+button:active {
+    transform: scale(1.2);
+    opacity: 0.85;
+}
